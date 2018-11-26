@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1035629768972",
+    "firebase_url": "https://uniqoffer-ca557.firebaseio.com",
+    "project_id": "uniqoffer-ca557",
+    "storage_bucket": "uniqoffer-ca557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035629768972:android:e37a8cb198cc96a6",
+        "android_client_info": {
+          "package_name": "com.marapps.uniqoffer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035629768972-lg20k5au8flsrn0glm1bhf4jrno87eue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marapps.uniqoffer",
+            "certificate_hash": "dceb6829c194cf88d3b8abb01451ddaaccab86f8"
+          }
+        },
+        {
+          "client_id": "1035629768972-gdus8ie2ukbkdismnik7pci56o0k2bv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGTUQ-IoHXDS5pGwiaIMEs2EVX5-QG9l0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035629768972-gdus8ie2ukbkdismnik7pci56o0k2bv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<tabs>
+    <tab
+        icon="@drawable/bottom_tab_home"
+        id="@+id/tab_home"
+        title="Home" />
+    <tab
+        icon="@drawable/bottom_tab_offers"
+        id="@+id/tab_offers"
+        title="Offers" />
+    <tab
+        icon="@drawable/bottom_tab_coupons"
+        id="@+id/tab_coupons"
+        title="Coupons" />
+
+    <tab
+        icon="@drawable/bottom_tab_compare"
+        id="@+id/tab_compare"
+        title="Compare" />
+
+</tabs>

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId 'com.marapps.uniqoffer'
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 26
         multiDexEnabled true
         testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
@@ -45,14 +45,18 @@ dependencies {
     def mockito = "org.mockito:mockito-core:$MOCKITO_VERSION"
 
     // App Dependencies
+    compile 'com.google.firebase:firebase-auth:15.0.0'
     compile "com.google.android.gms:play-services-gcm:$PLAY_SERVICES_VERSION"
+    compile 'com.google.android.gms:play-services-auth:15.0.0'
+
     compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
     compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
     compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
 
     compile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
 
-    compile ("com.squareup.sqlbrite2:sqlbrite:2.0.0") {
+    compile("com.squareup.sqlbrite2:sqlbrite:2.0.0") {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
     compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
@@ -62,10 +66,13 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:4.7.1'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'com.android.support.constraint:constraint-layout:1.1.3'
 
     compile 'com.jakewharton.timber:timber:4.5.1'
     compile "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTER_KNIFE_VERSION"
+
+    compile 'com.roughike:bottom-bar:2.3.1'
 
     // Replace provided dependency below with official AutoValue once this issue is fixed
     // https://github.com/google/auto/issues/268
@@ -77,7 +84,7 @@ dependencies {
     annotationProcessor 'com.squareup:javapoet:1.9.0'
     // https://github.com/rharter/auto-value-parcel/issues/64
 
-    compile  "com.google.dagger:dagger:$DAGGER_VERSION"
+    compile "com.google.dagger:dagger:$DAGGER_VERSION"
     provided 'org.glassfish:javax.annotation:10.0-b28' //Required by Dagger2
     annotationProcessor daggerCompiler
     testAnnotationProcessor daggerCompiler
@@ -107,8 +114,10 @@ dependencies {
 }
 
 // Log out test results to console
-tasks.matching {it instanceof Test}.all {
+tasks.matching { it instanceof Test }.all {
     testLogging.events = ["failed", "passed", "skipped"]
 }
 
 
+
+apply plugin: 'com.google.gms.google-services'

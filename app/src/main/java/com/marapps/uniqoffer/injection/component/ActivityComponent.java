@@ -2,6 +2,7 @@ package com.marapps.uniqoffer.injection.component;
 
 import com.marapps.uniqoffer.injection.PerActivity;
 import com.marapps.uniqoffer.injection.module.ActivityModule;
+import com.marapps.uniqoffer.ui.loginscreen.activity.LoginActivity;
 import com.marapps.uniqoffer.ui.main.MainActivity;
 
 import dagger.Subcomponent;
@@ -14,5 +15,6 @@ import dagger.Subcomponent;
 public interface ActivityComponent {
 
     void inject(MainActivity mainActivity);
+    void inject(LoginActivity loginActivity);
 
 }
