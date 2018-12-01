@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorControlNormal">#e7e7e8</item>
+        <item name="colorControlNormal">#212121</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowBackground">@color/white</item>
         <item name="android:windowAnimationStyle">@style/ActivityNavigateAnimation</item>
@@ -24,6 +24,16 @@
     <style name="SplashScreenTheme" parent="AppTheme">
         <item name="android:windowBackground">@drawable/splash_screen_layout</item>
     </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#212121</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 
 
 </resources>

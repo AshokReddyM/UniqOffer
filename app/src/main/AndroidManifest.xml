@@ -10,15 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.MainActivity">
-
-        </activity>
+        <activity android:name=".ui.main.MainActivity" />
         <activity android:name=".ui.base.BaseActivity" />
-        <activity android:name=".ui.loginscreen.activity.LoginActivity" >
-        </activity>
-        <activity android:name=".ui.splashscreen.SplashScreenActivity"
-            android:theme="@style/SplashScreenTheme"
-            >
+        <activity android:name=".ui.loginscreen.activity.LoginActivity" />
+        <activity
+            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme" />
+        <activity android:name=".ui.offers.OffersListActivity" />
+        <activity android:name=".ui.offer_details.OfferDetailsActivity" />
+        <activity android:name=".ui.store.StoreActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

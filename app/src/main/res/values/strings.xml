@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">UniqOffer</string>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Offer of the day</item>
+        <item>Categories</item>
+        <item>Saved</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+        <item>Share the App</item>
+        <item>Rate the App</item>
+        <item>Feedback</item>
+        <item>Help &amp; Support</item>
+    </string-array>
+
+
+    //Back Arrow Path Data
+    <string name="back_vector_path" translatable="false">M50 25,L80 50,M20 50,L80 50,M50 75,L80 50</string>
+    //Menu Path Data
+    <string name="menu_vector_path" translatable="false">M20 30,L80 30,M20 50,L80 50,M20 70,L80 70</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
