@@ -130,7 +130,7 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
                 }).create().show();
     }
 
-    public void oLoginSkipClick(View view) {
+    public void oLoginSkipBtnClick(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
